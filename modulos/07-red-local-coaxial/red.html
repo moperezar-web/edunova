@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduNova · Red Local P2P</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/globales.css">
+  <link rel="stylesheet" href="../02-panel-principal/dashboard.css">
+  <link rel="stylesheet" href="red.css">
+</head>
+<body>
+
+  <div class="layout-dashboard">
+    <aside class="barra-lateral">
+      <div class="branding">
+        <span class="logo">🎓</span>
+        <h2>EduNova</h2>
+      </div>
+      
+      <nav class="menu-navegacion">
+        <a href="../02-panel-principal/dashboard.html" class="item-menu"><span>🏠</span> Inicio</a>
+        <a href="../03-materias/materias.html" class="item-menu"><span>📚</span> Materias</a>
+        <a href="../04-biblioteca-virtual/biblioteca.html" class="item-menu"><span>📖</span> Biblioteca</a>
+        <a href="../05-calificaciones/notas.html" class="item-menu"><span>📝</span> Calificaciones</a>
+        <a href="../06-mensajes/mensajes.html" class="item-menu"><span>💬</span> Mensajes</a>
+        
+        <div class="separador-menu">Módulos Exclusivos</div>
+        
+        <a href="#" class="item-menu activo destacar"><span>🌐</span> Red Local P2P</a>
+        <a href="../08-agenda-ia-offline/agenda.html" class="item-menu destacar"><span>🤖</span> Agenda IA Local</a>
+        <a href="../09-laboratorio-gamificado/laboratorio.html" class="item-menu destacar"><span>🚀</span> Laboratorio</a>
+      </nav>
+
+      <div class="pie-lateral">
+        <a href="../01-inicio-sesion/login.html" class="boton-cerrar"><span>🚪</span> Cerrar Sesión</a>
+      </div>
+    </aside>
+
+    <main class="contenido-panel">
+      <header class="encabezado-top">
+        <div class="saludo">
+          <h1>Nodo de Transferencia Local (P2P)</h1>
+          <p>Comparte archivos a máxima velocidad con tus compañeros usando el router o cableado del aula. Cero internet.</p>
+        </div>
+      </header>
+
+      <div class="panel-red-grid">
+        
+        <div class="seccion-compartir">
+          <div class="zona-drop" id="zona-arrastre">
+            <span class="icono-drop">⚡</span>
+            <h3>Arrastra aquí tus archivos</h3>
+            <p>PDFs, imágenes o carpetas (Máx. 2 GB por envío local)</p>
+            <input type="file" id="input-archivo-local" style="display: none;">
+            <button class="boton-examinar" onclick="document.getElementById('input-archivo-local').click()">Examinar Archivo</button>
+          </div>
+
+          <div class="lista-compartidos">
+            <h4>Archivos Volando en la Red del Aula</h4>
+            <div class="historial-p2p" id="contenedor-transferencias">
+              <div class="item-transferencia">
+                <span>📘 Diapositivas_Historia_S3.pdf</span>
+                <span class="meta-p2p text-verde">Listo · Descargado</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="seccion-nodos">
+          <h4>Nodos de Alumnos Conectados (<span id="contador-nodos">3</span>)</h4>
+          <div class="lista-nodos">
+            <div class="nodo-dispositivo">
+              <span class="status-online"></span>
+              <div>
+                <h5>PC-Laboratorio-04 (Tú)</h5>
+                <p>IP: 192.168.1.45 · Nodo Central</p>
+              </div>
+            </div>

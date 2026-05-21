@@ -1,0 +1,41 @@
+/* ═════════════════════════════════════════════
+   EDUCONECTA - ESTILOS GLOBALES & VARIABLES
+   ═════════════════════════════════════════════ */
+
+:root {
+  /* Paleta de Colores Tecnológica */
+  --fondo-app: #f8fafc;        /* Gris ultra-claro de fondo */
+  --blanco-tarjeta: #ffffff;   /* Blanco puro para los contenedores */
+  --texto-principal: #0f172a;  /* Azul oscuro casi negro (Legibilidad 100%) */
+  --texto-mutado: #64748b;     /* Gris para subtítulos */
+  --lineas-borde: #e2e8f0;     /* Gris sutil para separar secciones */
+
+  /* Colores de Identidad (Para los Módulos) */
+  --primary: #2563eb;          /* Azul (Panel, Cursos y Biblioteca) */
+  --primary-dim: #dbeafe;      
+  --success: #16a34a;          /* Verde (Calificaciones y Red Local) */
+  --success-dim: #dcfce7;
+  --warning: #ea580c;          /* Naranja (Agenda Inteligente IA) */
+  --warning-dim: #ffedd5;
+  --danger: #dc2626;           /* Rojo (Alertas y Cierre de sesión) */
+  --danger-dim: #fee2e2;
+
+  /* Tipografía y Diseños Modernos */
+  --fuente-base: 'Sora', -apple-system, sans-serif;
+  --radio-esquinas: 12px;      /* Tarjetas redondeadas modernas */
+  --sombra-suave: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* Reset de seguridad (Evita deformaciones en cualquier navegador) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente-base);
+  background-color: var(--fondo-app);
+  color: var(--texto-principal);
+  -webkit-font-smoothing: antialiased;
+}

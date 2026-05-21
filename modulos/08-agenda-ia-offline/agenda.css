@@ -1,0 +1,108 @@
+.panel-ia-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1.8fr;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+/* Tarjeta IA Izquierda */
+.tarjeta-diagnostico-ia {
+  background-color: var(--blanco-tarjeta);
+  border: 1px solid var(--lineas-borde);
+  border-radius: var(--radio-esquinas);
+  padding: 30px;
+  box-shadow: var(--sombra-suave);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cabecera-ia {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cabecera-ia h3 { font-size: 16px; color: var(--texto-principal); }
+.cabecera-ia p { font-size: 12px; }
+
+.cerebro-animado {
+  font-size: 32px;
+  background-color: var(--warning-dim);
+  padding: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Medidor de Estrés */
+.medidor-estres {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.circulo-progreso-ia {
+  width: 130px;
+  height: 130px;
+  border: 8px solid var(--lineas-borde);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--texto-principal);
+  transition: all 0.3s ease;
+}
+
+#recomendacion-ia {
+  font-size: 13px;
+  color: var(--texto-mutado);
+  line-height: 1.5;
+  background-color: var(--fondo-app);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* Lista de Tareas Derecha */
+.lista-tareas-ia {
+  background-color: var(--blanco-tarjeta);
+  border: 1px solid var(--lineas-borde);
+  border-radius: var(--radio-esquinas);
+  padding: 30px;
+  box-shadow: var(--sombra-suave);
+}
+
+.lista-tareas-ia h4 { font-size: 15px; color: var(--texto-principal); margin-bottom: 4px; }
+.sub-ia { font-size: 13px; color: var(--texto-mutado); margin-bottom: 20px; }
+
+.contenedor-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.item-tarea-check {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  border: 1px solid var(--lineas-borde);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.15s;
+}
+
+.item-tarea-check:hover {
+  background-color: #f8fafc;
+}
+
+.item-tarea-check input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
