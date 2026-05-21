@@ -1,0 +1,119 @@
+.panel-red-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+/* Zona Drop de Archivos */
+.zona-drop {
+  background-color: var(--blanco-tarjeta);
+  border: 2px dashed var(--primary);
+  border-radius: var(--radio-esquinas);
+  padding: 40px;
+  text-align: center;
+  box-shadow: var(--sombra-suave);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  transition: background-color 0.2s;
+}
+
+.zona-drop.arrastrando {
+  background-color: var(--primary-dim);
+}
+
+.icono-drop {
+  font-size: 45px;
+  animation: pulso-energia 2s infinite ease-in-out;
+}
+
+.zona-drop h3 { font-size: 16px; color: var(--texto-principal); }
+.zona-drop p { font-size: 13px; color: var(--texto-mutado); }
+
+.boton-examinar {
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Lista de archivos compartidos */
+.lista-compartidos {
+  background-color: var(--blanco-tarjeta);
+  border: 1px solid var(--lineas-borde);
+  border-radius: var(--radio-esquinas);
+  padding: 24px;
+  margin-top: 24px;
+}
+
+.lista-compartidos h4, .seccion-nodos h4 {
+  font-size: 14px;
+  color: var(--texto-principal);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.historial-p2p {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item-transferencia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: var(--fondo-app);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.meta-p2p { font-size: 12px; font-weight: 600; }
+.text-verde { color: var(--success); }
+
+/* Monitoreo de Dispositivos (Nodos) */
+.seccion-nodos {
+  background-color: var(--blanco-tarjeta);
+  border: 1px solid var(--lineas-borde);
+  border-radius: var(--radio-esquinas);
+  padding: 24px;
+  height: fit-content;
+}
+
+.lista-nodos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nodo-dispositivo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.status-online {
+  width: 10px;
+  height: 10px;
+  background-color: var(--success);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--success);
+}
+
+.nodo-dispositivo h5 { font-size: 14px; color: var(--texto-principal); }
+.nodo-dispositivo p { font-size: 11px; color: var(--texto-mutado); }
+
+@keyframes pulso-energia {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}

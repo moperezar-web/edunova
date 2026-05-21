@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduNova · Mis Calificaciones</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/globales.css">
+  <link rel="stylesheet" href="../02-panel-principal/dashboard.css">
+  <link rel="stylesheet" href="notas.css">
+</head>
+<body>
+
+  <div class="layout-dashboard">
+    <aside class="barra-lateral">
+      <div class="branding">
+        <span class="logo">🎓</span>
+        <h2>EduNova</h2>
+      </div>
+      
+      <nav class="menu-navegacion">
+        <a href="../02-panel-principal/dashboard.html" class="item-menu"><span>🏠</span> Inicio</a>
+        <a href="../03-materias/materias.html" class="item-menu"><span>📚</span> Materias</a>
+        <a href="../04-biblioteca-virtual/biblioteca.html" class="item-menu"><span>📖</span> Biblioteca</a>
+        <a href="#" class="item-menu activo"><span>📝</span> Calificaciones</a>
+        <a href="../06-mensajes/mensajes.html" class="item-menu"><span>💬</span> Mensajes</a>
+        
+        <div class="separador-menu">Módulos Exclusivos</div>
+        
+        <a href="../07-red-local-coaxial/red.html" class="item-menu destacar"><span>🌐</span> Red Local P2P</a>
+        <a href="../08-agenda-ia-offline/agenda.html" class="item-menu destacar"><span>🤖</span> Agenda IA Local</a>
+        <a href="../09-laboratorio-gamificado/laboratorio.html" class="item-menu destacar"><span>🚀</span> Laboratorio</a>
+      </nav>
+
+      <div class="pie-lateral">
+        <a href="../01-inicio-sesion/login.html" class="boton-cerrar"><span>🚪</span> Cerrar Sesión</a>
+      </div>
+    </aside>
+
+    <main class="contenido-panel">
+      <header class="encabezado-top">
+        <div class="saludo">
+          <h1>Registro de Calificaciones</h1>
+          <p>Consulta tus notas del periodo actual y tu nivel de logro por asignatura.</p>
+        </div>
+      </header>
+
+      <section class="contenedor-boleta">
+        <div class="boleta-cabecera">
+          <span class="col-materia">Asignatura</span>
+          <span class="col-evaluacion">Periodo Actual</span>
+          <span class="col-nota">Calificación</span>
+          <span class="col-estado">Nivel de Logro</span>
+        </div>
+
+        <div class="boleta-cuerpo">
+          <div class="fila-nota">
+            <span class="col-materia nombre-materia">📐 Matemática</span>
+            <span class="col-evaluacion text-mutado">Bimestre I</span>
+            <span class="col-nota valor-nota badge-ad">AD</span>
+            <span class="col-estado"><span class="badge-estado est-ad">Logro Destacado</span></span>
+          </div>
+
+          <div class="fila-nota">
+            <span class="col-materia nombre-materia">📝 Comunicación</span>
+            <span class="col-evaluacion text-mutado">Bimestre I</span>
+            <span class="col-nota valor-nota badge-a">A</span>
+            <span class="col-estado"><span class="badge-estado est-a">Logro Previsto</span></span>
+          </div>
+
+          <div class="fila-nota">
+            <span class="col-materia nombre-materia">🧪 Ciencia y Tecnología</span>
+            <span class="col-evaluacion text-mutado">Bimestre I</span>
+            <span class="col-nota valor-nota badge-b">B</span>
+            <span class="col-estado"><span class="badge-estado est-b">En Proceso</span></span>
+          </div>
+
+          <div class="fila-nota">
+            <span class="col-materia nombre-materia">💬 Inglés</span>
+            <span class="col-evaluacion text-mutado">Bimestre I</span>
+            <span class="col-nota valor-nota badge-a">A</span>
+            <span class="col-estado"><span class="badge-estado est-a">Logro Previsto</span></span>
+          </div>
+
+          <div class="fila-nota">
+            <span class="col-materia nombre-materia">🏛️ Ciencias Sociales</span>
+            <span class="col-evaluacion text-mutado">Bimestre I</span>
+            <span class="col-nota valor-nota badge-ad">AD</span>
+            <span class="col-estado"><span class="badge-estado est-ad">Logro Destacado</span></span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="notas.js"></script>
+</body>
+</html>

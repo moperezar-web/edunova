@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduNova · Panel Principal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/globales.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <div class="layout-dashboard">
+    <aside class="barra-lateral">
+      <div class="branding">
+        <span class="logo">🎓</span>
+        <h2>EduNova</h2>
+      </div>
+      
+      <nav class="menu-navegacion">
+        <a href="#" class="item-menu activo"><span>🏠</span> Inicio</a>
+        <a href="../03-materias/materias.html" class="item-menu"><span>📚</span> Materias</a>
+        <a href="../04-biblioteca-virtual/biblioteca.html" class="item-menu"><span>📖</span> Biblioteca</a>
+        <a href="../05-calificaciones/notas.html" class="item-menu"><span>📝</span> Calificaciones</a>
+        <a href="../06-mensajes/mensajes.html" class="item-menu"><span>💬</span> Mensajes</a>
+        
+        <div class="separador-menu">Módulos Exclusivos</div>
+        
+        <a href="../07-red-local-coaxial/red.html" class="item-menu destacar"><span>🌐</span> Red Local P2P</a>
+        <a href="../08-agenda-ia-offline/agenda.html" class="item-menu destacar"><span>🤖</span> Agenda IA Local</a>
+        <a href="../09-laboratorio-gamificado/laboratorio.html" class="item-menu destacar"><span>🚀</span> Laboratorio</a>
+      </nav>
+
+      <div class="pie-lateral">
+        <a href="../01-inicio-sesion/login.html" class="boton-cerrar"><span>🚪</span> Cerrar Sesión</a>
+      </div>
+    </aside>
+
+    <main class="contenido-panel">
+      <header class="encabezado-top">
+        <div class="saludo">
+          <h1>¡Hola de nuevo, Administrador!</h1>
+          <p>Este es el estado actual de tu entorno educativo local.</p>
+        </div>
+        <div class="indicador-red">
+          <span class="punto-verde"></span> Red Local Activa
+        </div>
+      </header>
+
+      <section class="tarjetas-resumen">
+        <div class="tarjeta-info">
+          <h3>Mis Materias</h3>
+          <p class="numero">6</p>
+          <span class="detalle text-azul">Cursos activos esta semana</span>
+        </div>
+        <div class="tarjeta-info">
+          <h3>Mensajes</h3>
+          <p class="numero">3</p>
+          <span class="detalle text-verde">Nuevas notificaciones</span>
+        </div>
+        <div class="tarjeta-info">
+          <h3>Dispositivos P2P</h3>
+          <p class="numero">14</p>
+          <span class="detalle text-naranja">Compañeros conectados en la red</span>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
